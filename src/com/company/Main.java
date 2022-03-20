@@ -6,7 +6,12 @@ public class Main {
 //    psvm
     public static void main(String[] args) {
 
-        printEverything();
+        Person p1 = new Person();
+        Person p2 = new Person(2);
+        Person p3 = new Person("Rossita","Aaronson");
+        Person p4 = new Person(4,23);
+        Person p5 = new Person(5,"Tom","Sawer",16);
+
 
     }
 
@@ -67,4 +72,16 @@ public class Main {
         printMult(first,second);
     }
 
+
+    static void printEveryLetter(String s){
+        for (int i = 0; i < s.length(); i++) {
+            System.out.println(s.charAt(i));
+        }
+    }
+
+    static void printArray(String[] arrStr){
+        for (int i = 0; i < arrStr.length; i++) {
+            System.out.println(arrStr[i]);
+        }
+    }
 }
