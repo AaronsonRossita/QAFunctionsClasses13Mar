@@ -14,18 +14,18 @@ public class Person {
     public Person(){
     }
 
-    public Person(int id){
+    public Person(int id) {
         this.id = id;
-    }
-
-    public Person(String name, String lastname) {
-        this.name = name;
-        this.lastname = lastname;
     }
 
     public Person(int id, int age) {
         this.id = id;
         this.age = age;
+    }
+
+    public Person(String name, String lastname) {
+        this.name = name;
+        this.lastname = lastname;
     }
 
     public Person(int id, String name, String lastname, int age) {
@@ -35,9 +35,6 @@ public class Person {
         this.age = age;
     }
 
-
-
-
-// 3. methods
+    // 3. methods
 
 }
