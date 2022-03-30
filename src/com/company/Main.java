@@ -1,5 +1,9 @@
 package com.company;
 
+import math.Calculator;
+import math.Client;
+import math.ClubClient;
+
 import java.util.Scanner;
 
 public class Main {
@@ -30,13 +34,12 @@ public class Main {
 //        System.out.println(calc1.first + calc2.second);
 //
 //        System.out.println(calc1.div);
-        Car car1 = new Car(5,"Skoda",false);
-        Car car2 = new Car();
-        Car car3 = new Car(4);
-        car2.model = "Fiat";
-        car3.model = "Kia";
-
-
+//        Car car1 = new Car(5,"Skoda",false);
+//        Car car2 = new Car();
+//        Car car3 = new Car(4);
+//        car2.model = "Fiat";
+//        car3.model = "Kia";
+//
 //        System.out.println(car1.doors);
 //        System.out.println(car1.model);
 //        System.out.println(car1.isElectric);
@@ -52,7 +55,19 @@ public class Main {
 //        System.out.println(car1.toString());
 //        System.out.println(car2);
 //        System.out.println(car3);
- 
+//        System.out.println(Calculator.sum(4,5));
+//        System.out.println(Calculator.sum(new int[]{1,2,3,4}));
+//        System.out.println(Calculator.power(2,3));
+
+        Client client = new Client("Amy Smith",300);
+        System.out.println(client);
+
+        ClubClient clubClient = new ClubClient("Beth Johnson",400,15);
+        System.out.println(clubClient);
+
+        client.printSomething();
+        clubClient.printSomething();
+
     }
 
 

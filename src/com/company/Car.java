@@ -32,6 +32,7 @@ class Car {
     }
 
 //  Overload
+
     public int price(int year){
         if (year < 1970){
             return 0;       // and
@@ -53,8 +54,14 @@ class Car {
     }
 
 //  Override
+
     @Override
     public String toString() {
-        return "This car is " + model + " and it has " + doors + " doors";
+        return "Car{" +
+                "doors=" + doors +
+                ", model='" + model + '\'' +
+                ", isElectric=" + isElectric +
+                '}';
     }
+
 }
